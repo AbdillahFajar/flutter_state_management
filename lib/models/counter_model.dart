@@ -9,4 +9,9 @@ class CounterModel extends ChangeNotifier{
     _angka++;
     notifyListeners();
   }
+
+  void refresh() {
+    _angka = 0;
+    notifyListeners();
+  }
 }
